@@ -8,4 +8,14 @@ angular.module('myApp.directives', []).
     return function(scope, elm, attrs) {
       elm.text(version);
     };
-  }]);
+  }])
+.directive('viewHeader', function() {
+  	return {
+  		templateUrl: 'partials/header.html',
+  	}
+  })
+.directive('viewFooter', function() {
+  	return {
+  		templateUrl: 'partials/footer.html',
+  	}
+  });
